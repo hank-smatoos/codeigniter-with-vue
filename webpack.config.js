@@ -1,5 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
+var WebpackNotifierPlugin = require('webpack-notifier');
 
 module.exports = {
   entry: './src/app.js',
@@ -50,7 +51,10 @@ module.exports = {
   performance: {
     hints: false
   },
-  devtool: '#eval-source-map'
+  devtool: '#eval-source-map',
+  plugins: [
+    new WebpackNotifierPlugin({alwaysNotify: true})
+  ]
 }
 
 if (process.env.NODE_ENV === 'production') {
