@@ -1,0 +1,29 @@
+{
+  "name": "codeigniter-with-vue",
+  "version": "1.0.0",
+  "description": "codeigniter3.1.3 with vue2.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "cross-env": "^4.0.0",
+    "css-loader": "^0.28.0",
+    "file-loader": "^0.11.1",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "vue-loader": "^11.3.4",
+    "vue-template-compiler": "^2.2.6",
+    "webpack": "^2.3.3"
+  },
+  "dependencies": {
+    "vue": "^2.2.6",
+    "vue-router": "^2.4.0"
+  }
+}
