@@ -11,9 +11,7 @@
       </div>
 
       <div class="links">
-        <a href="https://codeigniter.org.tw/userguide3/">CodeIgniter3.1.3 Documentation</a>
-        <a href="https://cn.vuejs.org/v2/guide/">Vue2.0 Documentation</a>
-        <a href="https://github.com/shana0440/codeigniter-with-vue">Github</a>
+        <a v-for="(link, name) in links" v-bind:href="link">{{name}}</a>
       </div>
     </div>
   </div>
@@ -23,7 +21,11 @@
 export default {
   data() {
     return {
-      title: 'Hello World!!'
+      links: {
+        "CodeIgniter3.1.3 Documentation": "https://codeigniter.org.tw/userguide3/",
+        "Vue2.0 Documentation": "https://cn.vuejs.org/v2/guide/",
+        "Github": "https://github.com/shana0440/codeigniter-with-vue"
+      }
     }
   }
 }
